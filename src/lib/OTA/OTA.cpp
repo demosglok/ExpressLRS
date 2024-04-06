@@ -26,7 +26,7 @@ GeneratePacketCrc_t OtaGeneratePacketCrc;
 
 void OtaUpdateCrcInitFromUid()
 {
-    OtaCrcInitializer = (UID[4] << 8) | UID[5];
+    OtaCrcInitializer = (UID[1] << 8) | UID[2];
     OtaCrcInitializer ^= OTA_VERSION_ID;
 }
 

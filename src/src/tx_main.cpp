@@ -1313,7 +1313,7 @@ void setup()
 
     Radio.currFreq = FHSSgetInitialFreq(); //set frequency first or an error will occur!!!
     #if defined(RADIO_SX127X)
-    //Radio.currSyncWord = UID[3];
+    Radio.currSyncWord = UID[3];
     #endif
     bool init_success;
     #if defined(USE_BLE_JOYSTICK)

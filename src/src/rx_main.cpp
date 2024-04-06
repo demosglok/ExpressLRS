@@ -1443,7 +1443,7 @@ static void setupRadio()
 {
     Radio.currFreq = FHSSgetInitialFreq();
 #if defined(RADIO_SX127X)
-    //Radio.currSyncWord = UID[3];
+    Radio.currSyncWord = UID[3];
 #endif
     bool init_success = Radio.Begin();
     POWERMGNT::init();
